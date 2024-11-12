@@ -2,14 +2,16 @@
 name = "poetry-web"
 version = "0.1.0"
 description = ""
-authors = ["Kirill Keränen <Keranen.kirill@gmail.com>"]
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^3.0.3"
-pytest = "^8.3.3"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
 
 [build-system]
 requires = ["poetry-core"]
