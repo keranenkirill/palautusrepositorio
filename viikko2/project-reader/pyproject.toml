@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ohtutesting app"
+version = "0.1.0"
+description = "Sovellus joka toimii testisyötteenä ohtun viikon 2 laskareihin"
+authors = ["Kirill Keränen"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tomli = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
