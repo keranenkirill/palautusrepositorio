@@ -13,3 +13,5 @@ print(f"{x} - {y} = {erotus(x, y)}")  # muutos mainissa
 
 logger("lopetetaan ohjelma")
 print("goodbye!")
+
+print("muutos vk2t9")
