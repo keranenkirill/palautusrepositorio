@@ -51,6 +51,22 @@ Register With Username That Is Already In Use
    Submit Registration
    Register Should Fail With Message  Username is already in use
 
+
+Register And Login With Valid Username And Password
+   Set Username  aapo
+   Set Password  aapo1234
+   Set Password Confirmation  aapo1234
+   Submit Registration
+   Register Should Succeed
+   Click Link  Continue to main page
+   Click Button  Logout
+   Go To Login Page
+   Set Username  aapo
+   Set Password  aapo1234
+   Click Button  Login
+   Ohtu Application Should Be Open
+
+
 *** Keywords ***
 Register Should Succeed
    Welcome Page Should Be Open
