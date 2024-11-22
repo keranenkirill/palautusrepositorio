@@ -7,7 +7,7 @@ Test Setup      Reset Application Create User And Go To Login Page
 *** Test Cases ***
 Login With Correct Credentials
     Set Username  kalle
-    Set Password  kalle123
+    Set Password  kalle1234
     Submit Credentials
     Login Should Succeed
 
@@ -23,7 +23,7 @@ Login With Nonexistent Username
     Set Password  kalle123
     Submit Credentials
     Login Should Fail With Message  Invalid username or password
-    
+
 *** Keywords ***
 Login Should Succeed
     Main Page Should Be Open
@@ -47,5 +47,5 @@ Set Password
 *** Keywords ***
 Reset Application Create User And Go To Login Page
     Reset Application
-    Create User  kalle  kalle123
+    Create User  kalle  kalle1234
     Go To Login Page

@@ -30,9 +30,24 @@ class UserService:
     def create_user(self, username, password, password_confirmation):
         self.validate(username, password, password_confirmation)
 
-        user = self._user_repository.create(
-            User(username, password)
-        )
+        if self._user_repository.find_by_username(username):
+            raise UserInputError(
+                f"Username is already in use"
+            )
+
+        if len(username) < 3:
+            raise UserInputError("Username must be at least 3 characters long")
+        elif len(password) < 8:
+            raise UserInputError("Password must be at least 8 characters long")
+        elif password.isalpha():
+            raise UserInputError("Password must not be only letters")
+        elif password != password_confirmation:
+            raise UserInputError(
+                "Password and password confirmation do not match")
+        else:
+            user = self._user_repository.create(
+                User(username, password)
+            )
 
         return user
 
