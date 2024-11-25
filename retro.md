@@ -12,3 +12,4 @@ Tekniikat tarjoavat rakenteen, jonka avulla tiimit voivat reflektoida toimintaan
 6. git: tägit [versionhallinta]
 - muutos 1.
 - muutos 2.
+- muutos 3.
