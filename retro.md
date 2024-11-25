@@ -8,3 +8,6 @@ RETROSPECTIVE WIKI
 RETROSPECTIVE WIKI
 
 Tekniikat tarjoavat rakenteen, jonka avulla tiimit voivat reflektoida toimintaansa ja löytää keinoja parantaa yhteistyötään ja prosessejaan.
+
+6. git: tägit [versionhallinta]
+- mutos 1.
