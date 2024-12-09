@@ -13,6 +13,8 @@ def main():
     kayttoliittyma.kaynnista()
 
     window.mainloop()
+    print("Rebase branchin muuutos")
+
 
 if __name__ == "__main__":
     main()
