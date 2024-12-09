@@ -9,6 +9,7 @@ def main():
     window = Tk()
     window.title("Laskin")
 
+    print("Mainiinmuutosta")
     kayttoliittyma = Kayttoliittyma(sovellus, window)
     kayttoliittyma.kaynnista()
 
